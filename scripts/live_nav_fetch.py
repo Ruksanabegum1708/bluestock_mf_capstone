@@ -62,10 +62,6 @@ if data:
 else:
     print(" Failed to fetch initial fund")
 
-
-# -------------------------------
-# 2. MULTIPLE SCHEMES FETCH
-# -------------------------------
 SCHEMES = [
     {"code": 119551, "name": "SBI_Bluechip"},
     {"code": 120503, "name": "ICICI_Bluechip"},
