@@ -42,7 +42,7 @@ print(df.head(3))
 Path("data/raw").mkdir(parents=True, exist_ok=True)
 output_path = "data/raw/nav_hdfc_top100_125497.csv"
 df.to_csv(output_path, index=False)
-print(f"\n✅ Saved → {output_path}")
+print(f"\nSaved → {output_path}")
 print(f"   Total rows: {len(df):,}")
 
 # ── Task 5: Fetch NAV for 5 Key Schemes ──────────
@@ -83,7 +83,7 @@ for scheme in SCHEMES:
     # Save individual CSV
     path = f"data/raw/nav_{scheme['name']}_{scheme['code']}.csv"
     df.to_csv(path, index=False)
-    print(f"  ✅ Saved → {path}")
+    print(f"  Saved → {path}")
 
     all_frames.append(df)
     time.sleep(0.5)
@@ -91,5 +91,5 @@ for scheme in SCHEMES:
 # Save combined CSV
 combined = pd.concat(all_frames, ignore_index=True)
 combined.to_csv("data/raw/nav_all_5_schemes_combined.csv", index=False)
-print(f"\n✅ Combined CSV saved → data/raw/nav_all_5_schemes_combined.csv")
+print(f"\nCombined CSV saved → data/raw/nav_all_5_schemes_combined.csv")
 print(f"   Total rows: {len(combined):,}")
