@@ -1,3 +1,32 @@
+"""
+live_nav_fetch.py
+=================
+Live NAV Fetcher for Bluestock MF Capstone Project.
+
+This script fetches live and historical NAV data from
+mfapi.in REST API for 6 key mutual fund schemes and
+saves them as CSV files in data/raw/ folder.
+
+Schemes fetched:
+    - SBI Small Cap Fund Direct (125497)
+    - SBI Bluechip Direct (119551)
+    - ICICI Pru Bluechip Direct (120503)
+    - Nippon India Large Cap Direct (118632)
+    - Axis Bluechip Direct (119092)
+    - Kotak Bluechip Direct (120841)
+
+Usage:
+    python live_nav_fetch.py
+
+Output:
+    data/raw/nav_*.csv files for each scheme
+    data/raw/nav_all_5_schemes_combined.csv
+
+Author: Ruksana Begum
+Date: June 2026
+Company: Bluestock Fintech Pvt. Ltd.
+"""
+
 import requests
 import pandas as pd
 from pathlib import Path

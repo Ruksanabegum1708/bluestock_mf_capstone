@@ -1,3 +1,24 @@
+"""
+recommender.py
+==============
+Simple Fund Recommender System for Bluestock MF Capstone.
+
+Takes investor risk appetite as input and recommends
+top 3 mutual funds based on Sharpe ratio within the
+matching risk category.
+
+Risk Appetite Options:
+    - Low      → Liquid and Gilt funds
+    - Moderate → Large Cap and Flexi Cap funds
+    - High     → Small Cap and Mid Cap funds
+
+Usage:
+    python scripts/recommender.py
+
+Author: Ruksana Begum
+Date: June 2026
+Company: Bluestock Fintech Pvt. Ltd.
+"""
 
 import pandas as pd
 from pathlib import Path
