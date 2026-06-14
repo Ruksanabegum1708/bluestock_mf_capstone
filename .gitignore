@@ -1,5 +1,2 @@
-﻿venv/
-__pycache__/
-*.pyc
-.env
-.DS_Store
+
+mutual_fund_env/
