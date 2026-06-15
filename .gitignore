@@ -1,2 +1,26 @@
-
+# Virtual Environment
 mutual_fund_env/
+venv/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.env
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Database
+*.db
+data/db/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Large data files
+data/raw/*.csv
+data/processed/*.csv
+!data/raw/.gitkeep
+!data/processed/.gitkeep
